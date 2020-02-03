@@ -1,4 +1,4 @@
-node {
+node (label: 'jenkinsslave') {
    stage('SCM Git Checkout'){
     // Clone repo
         git 'https://github.com/pranavdh/mavendemo-webapp'
