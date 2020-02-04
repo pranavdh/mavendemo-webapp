@@ -10,7 +10,7 @@ node (label: 'jenkinsslave') {
          }
    stage('Deploy WAR file to AWS EC2 Prep'){
           sshagent(['tomcat-SSH-WAR-Files-AWSEC2s']) {
-          sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@10.0.6.184:/opt/apache-tomcat-7.0.99/webapps/'
+          sh 'scp -o StrictHostKeyChecking=no target/*.war ec2-user@10.0.6.184:/opt/apache-tomcat-7.0.99/webapps'
           }
         }
 
