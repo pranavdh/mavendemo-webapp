@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('Git Checkout') {
+            steps{    
+                git credentialsId: '98aba2f5-8443-41d2-bfcc-4e09068d40f9', url: 'https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/mavendemo-webapp'
+        }
+    }
+  }
+}
